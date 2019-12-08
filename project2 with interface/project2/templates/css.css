@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+  
+button {
+    font-family: Monoton;
+    font-size: 40px;
+    margin: 1em;
+}
+  
+input[type="query"] {
+    width: 3em;
+}
+
+table{
+text-align: center;    
+}

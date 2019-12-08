@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+<!--    <link rel="stylesheet" href="css.css">-->
+</head>
+<body>
+    <form method="POST">
+
+        <input name="text" placeholder="enter your query..." style="margin-bottom: 10px;" class="input-text"><br>
+
+        <input type="submit" class="submit" value="submit" style="margin: 0px 0px 20px auto;">
+    </form>
+
+    <div style="border: 10px;">
+    {% if show %}
+        {% for i in list %}
+        <div>
+            <h3>
+                filename :  {{i}}
+            </h3>
+            <h5>
+               score : {{ list[i] }}
+            </h5>
+        </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+    
+    
+    
+</body>
+</html>
